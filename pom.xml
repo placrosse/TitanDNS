@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://maven.apache.org/POM/4.0.0
+        http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.titandns</groupId>
+	<artifactId>titandns</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>TitanDNS</name>
+
+	<modules>
+		<module>titandns-ns</module>
+	</modules>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<artifactId>maven-assembly-plugin</artifactId>
+					<version>2.2.1</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>2.3.1</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>commons-cli</groupId>
+				<artifactId>commons-cli</artifactId>
+				<version>1.2</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.inject</groupId>
+				<artifactId>guice</artifactId>
+				<version>3.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.netty</groupId>
+				<artifactId>netty</artifactId>
+				<version>3.2.4.Final</version>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-api</artifactId>
+				<version>1.6.1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.perf4j</groupId>
+				<artifactId>perf4j</artifactId>
+				<version>0.9.14</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-core</artifactId>
+				<version>0.9.29</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty.aggregate</groupId>
+				<artifactId>jetty-all-server</artifactId>
+				<version>7.4.3.v20110701</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<inceptionYear>2011</inceptionYear>
+
+	<url>https://bitbucket.org/titandns/main</url>
+
+	<scm>
+		<connection>scm:hg:https://titandns@bitbucket.org/titandns/main</connection>
+		<url>https://bitbucket.org/titandns/main/src</url>
+	</scm>
+
+	<developers>
+		<developer>
+			<id>bmatthews68</id>
+			<name>Brian Matthews</name>
+			<email>brian@btmatthews.com</email>
+			<url>http://btmatthews.com</url>
+		</developer>
+		<developer>
+			<id>avilling</id>
+			<name>Arann Villing</name>
+			<email>avilling@gmail.com</email>
+		</developer>
+	</developers>
+
+	<issueManagement>
+		<system>bitbucket</system>
+		<url>https://bitbucket.org/titandns/main/issues</url>
+	</issueManagement>
+
+</project>
